@@ -39,6 +39,7 @@
     "product_listing_title_letter_spacing": 50,
     "capitalize_buttons": true,
     "buttons_letter_spacing": 50,
+    "enable_page_transitions": false,
     "enable_section_animations": false,
     "enable_dynamic_product_options": true,
     "swatch_options": "Color",
