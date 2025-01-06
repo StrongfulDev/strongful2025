@@ -221,12 +221,44 @@
             "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 43%, rgba(0, 0, 0, 1) 100%)",
             "overlay_opacity": 50
           }
+        },
+        "item_6aLwME": {
+          "type": "item",
+          "settings": {
+            "width": "100",
+            "height": 500,
+            "mobile_height": 500,
+            "media_fit": "cover",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "text_position": "center_center",
+            "accent": "",
+            "title": "Grid item",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-2-base",
+            "subheading": "<p>Perfect for lookbooks and editorial photography</p>",
+            "subheading_tag": "h4",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link": "",
+            "link_text": "",
+            "button_style": "btn--primary",
+            "background_color": "",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
         "165487802257d72399-2",
         "165487802257d72399-1",
-        "165487802257d72399-0"
+        "165487802257d72399-0",
+        "item_6aLwME"
       ],
       "settings": {
         "heading": "",
@@ -339,6 +371,45 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
+    "blog_posts_4D78Tp": {
+      "type": "blog-posts",
+      "blocks": {
+        "article_PBKJ3B": {
+          "type": "article",
+          "settings": {
+            "article": ""
+          }
+        },
+        "article_CB4d3f": {
+          "type": "article",
+          "settings": {
+            "article": ""
+          }
+        }
+      },
+      "block_order": [
+        "article_PBKJ3B",
+        "article_CB4d3f"
+      ],
+      "settings": {
+        "heading": "Blog posts",
+        "subheading": "",
+        "button_link": "shopify://blogs/blog",
+        "link_text": "View all posts",
+        "display_type": "all",
+        "blog": "blog",
+        "max_articles": 2,
+        "show_tags": true,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpt": true,
+        "show_featured_image": true,
+        "aspect_ratio": "landscape",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "16558561315f6147d3": {
       "type": "sales-banner",
       "settings": {
@@ -367,7 +438,7 @@
         "text_color": "#ffffff",
         "button_background_color": "#ffffff",
         "button_text_color": "#000000",
-        "background_color": "#c51c26",
+        "background_color": "#111111",
         "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
@@ -1171,6 +1242,7 @@
     "16549177944ec2347e",
     "1655855558c1ac2348",
     "16548772614c49ba39",
+    "blog_posts_4D78Tp",
     "16558561315f6147d3",
     "1655747757d7226f15",
     "165488047346f59e49",
