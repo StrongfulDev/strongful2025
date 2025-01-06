@@ -15,7 +15,7 @@
         "d0cd2366-7930-4809-80d7-2b38d2d4fb07": {
           "type": "heading",
           "settings": {
-            "title": "Image hero",
+            "title": "",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-2"
           }
@@ -23,7 +23,7 @@
         "8a49de45-4784-4f5d-adcf-b87e81e76548": {
           "type": "subheading",
           "settings": {
-            "subheading": "Use these sections to promote a particular feature with editorial photography.",
+            "subheading": "",
             "subheading_tag": "h3",
             "subheading_font_class": "fs-heading-5-base"
           }
@@ -279,7 +279,7 @@
           "type": "collection",
           "settings": {
             "show_view_all": true,
-            "collection": "amber-shorts-sibiling",
+            "collection": "20-off-selected-items",
             "collection_name": "First collection"
           }
         },
@@ -287,7 +287,7 @@
           "type": "collection",
           "settings": {
             "show_view_all": true,
-            "collection": "",
+            "collection": "oasis",
             "collection_name": "Second collection"
           }
         }
