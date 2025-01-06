@@ -25,7 +25,7 @@
         "announcement-bar-1": {
           "type": "announcement",
           "settings": {
-            "title": "<p>Back In Stock </p><p>Horizon Collection</p>",
+            "title": "<p>20%</p>",
             "title_mobile": "",
             "link": ""
           }
