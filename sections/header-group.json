@@ -77,6 +77,28 @@
             "overlay_opacity": 33
           }
         },
+        "full_width_meganav_7WaViL": {
+          "type": "full_width_meganav",
+          "settings": {
+            "dropdown_parent_link": "אקססוריז",
+            "column_count": 4,
+            "show_column_borders": false,
+            "show_promo": true,
+            "promo_width": 310,
+            "promo_height": 290,
+            "secondary_position": "right",
+            "image": "shopify://shop_images/13_8db766ef-9603-47f0-b118-37de2881de6f.jpg",
+            "focal_point": "center",
+            "promo_text": "Newest Releases",
+            "link": "shopify://collections/all",
+            "link_text": "SHOP NOW",
+            "text_position": "center_flex-end",
+            "text_color": "#ffffff",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1) 22%, rgba(0, 0, 0, 1) 96%)",
+            "overlay_opacity": 33
+          }
+        },
         "meganav-1": {
           "type": "compact_meganav",
           "disabled": true,
@@ -111,6 +133,7 @@
       },
       "block_order": [
         "meganav-0",
+        "full_width_meganav_7WaViL",
         "meganav-1",
         "mobile_menu_images_iExE8t"
       ],
