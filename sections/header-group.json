@@ -78,6 +78,7 @@
         },
         "meganav-1": {
           "type": "compact_meganav",
+          "disabled": true,
           "settings": {
             "dropdown_parent_link": "מוצרים",
             "columns_width": 270,
