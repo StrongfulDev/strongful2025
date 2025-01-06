@@ -94,6 +94,7 @@
     "social_tiktok_link": "#",
     "social_twitter_link": "#",
     "social_whatsapp_link": "",
+    "favicon": "shopify://shop_images/logo_55eeda84-b676-4d3d-8e6b-76637221ff8d.png",
     "enable_back_to_top": true,
     "content_for_index": [],
     "blocks": {
@@ -352,5 +353,8 @@
       "social_tiktok_link": "#",
       "social_twitter_link": "#"
     }
+  },
+  "platform_customizations": {
+    "custom_css": []
   }
 }
