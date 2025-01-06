@@ -2565,7 +2565,7 @@ html:not(.no-js) body.template-password header.header--transparent .header__inne
 .template-collection .main .collection-section:first-of-type .collection__top-row{
         border-top:0;
       }
-.collection-section.shopify-section{
+.collection-section.shopify-section{  
   overflow:visible;
   overflow:initial;
 }
@@ -18862,4 +18862,10 @@ body, *, h1, h2, h3, h4, h5, h6, p, a, span, div, li, input, textarea, select {
 }
 .meganav__nav ul[depth="0"]>li{
   font-size: smaller;
+
 } 
+
+.meganav__primary, .meganav__secondary {
+  width: 100%;
+  direction:rtl
+}
