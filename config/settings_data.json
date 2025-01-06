@@ -77,7 +77,7 @@
     "show_cart_notes": false,
     "cart_item_aspect_ratio": "natural",
     "enable_free_shipping_bar": true,
-    "free_shipping_threshold": "250",
+    "free_shipping_threshold": "210",
     "enable_cross_sells": true,
     "cross_sells_recommendations_type": "product-list",
     "collection": "",
