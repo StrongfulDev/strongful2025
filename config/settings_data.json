@@ -63,7 +63,7 @@
     "product_listing_show_vendor": true,
     "enable_border_on_hover": false,
     "enable_quick_add": true,
-    "enable_quick_view": true,
+    "enable_quick_view": false,
     "enable_product_card_swatches": true,
     "product_card_swatch_size": "large",
     "enable_product_card_sibling_swatches": true,
