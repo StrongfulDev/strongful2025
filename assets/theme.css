@@ -12163,6 +12163,8 @@ html.sticky-header-enabled[data-enable-sticky-announcement-bar*="mobile"]
 }
 .meganav[data-meganav-type="full_width_meganav"] .meganav__primary{
     flex-grow:1;
+    font-size: medium;
+    font-weight: normal;
   }
 .meganav[data-meganav-type="full_width_meganav"] .meganav__primary .meganav__nav{
       width:100%;
@@ -18858,3 +18860,6 @@ html:not(.no-js):not(.prefers-reduced-motion) .animation.animation--apps .animat
 body, *, h1, h2, h3, h4, h5, h6, p, a, span, div, li, input, textarea, select {
   font-family: 'Heebo', sans-serif;
 }
+.meganav__nav ul[depth="0"]>li{
+  font-size: smaller;
+} 
