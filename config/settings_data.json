@@ -357,8 +357,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      "{max-width:1600px}"
-    ]
+    "custom_css": []
   }
 }
