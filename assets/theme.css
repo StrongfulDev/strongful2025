@@ -11630,6 +11630,8 @@ html.sticky-header-enabled[data-enable-sticky-announcement-bar*="desktop"]
   align-items:center;
   padding-left:calc(4px * 3);
   padding-left:var(--spacing-3);
+  padding-left: 0px;
+  padding-right: 5px;
   white-space:nowrap;
   text-overflow:ellipsis;
   overflow:hidden;

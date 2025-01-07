@@ -117,6 +117,56 @@
       {%- endif -%}
 
       {%- if type == 'checkbox' or type == 'swatch' -%}
+        {%- assign color_value_downcase = filter_value.label | downcase -%}
+        {%- assign color_hex = "" -%}
+        {%- if color_value_downcase contains "black" or color_value_downcase contains "שחור" -%}
+          {%- assign color_hex = "#000000" -%}
+        {%- elsif color_value_downcase contains "white" or color_value_downcase contains "לבן" -%}
+          {%- assign color_hex = "#ffffff" -%}
+        {%- elsif color_value_downcase contains "red" or color_value_downcase contains "אדום" -%}
+          {%- assign color_hex = "#ff0000" -%}
+        {%- elsif color_value_downcase contains "blue" and color_value_downcase contains "deep" -%}
+          {%- assign color_hex = "#191970" -%}  <!-- midnightblue -->
+        {%- elsif color_value_downcase contains "blue" and color_value_downcase contains "dark" -%}
+          {%- assign color_hex = "#00008b" -%}  <!-- darkblue -->
+        {%- elsif color_value_downcase contains "blue" and color_value_downcase contains "light" -%}
+          {%- assign color_hex = "#87cefa" -%}  <!-- lightskyblue -->
+        {%- elsif color_value_downcase contains "blue" or color_value_downcase contains "כחול" -%}
+          {%- assign color_hex = "#0000ff" -%}  <!-- blue -->
+        {%- elsif color_value_downcase contains "green" and color_value_downcase contains "light" -%}
+          {%- assign color_hex = "#90ee90" -%}
+        {%- elsif color_value_downcase contains "green" and color_value_downcase contains "dark" -%}
+          {%- assign color_hex = "#006400" -%}
+        {%- elsif color_value_downcase contains "green" or color_value_downcase contains "ירוק" -%}
+          {%- assign color_hex = "#008000" -%}
+        {%- elsif color_value_downcase contains "gray" and color_value_downcase contains "dark" -%}
+          {%- assign color_hex = "#a9a9a9" -%}
+        {%- elsif color_value_downcase contains "gray" and color_value_downcase contains "light" -%}
+          {%- assign color_hex = "#d3d3d3" -%}
+        {%- elsif color_value_downcase contains "gray" or color_value_downcase contains "אפור" -%}
+          {%- assign color_hex = "#808080" -%}
+        {%- elsif color_value_downcase contains "nude" or color_value_downcase contains "ניוד" -%}
+          {%- assign color_hex = "#e6be8a" -%}
+        {%- elsif color_value_downcase contains "yellow" or color_value_downcase contains "צהוב" -%}
+          {%- assign color_hex = "#ffff00" -%}
+        {%- elsif color_value_downcase contains "orange" or color_value_downcase contains "כתום" -%}
+          {%- assign color_hex = "#ffa500" -%}
+        {%- elsif color_value_downcase contains "purple" or color_value_downcase contains "סגול" -%}
+          {%- assign color_hex = "#800080" -%}
+        {%- elsif color_value_downcase contains "pink" and color_value_downcase contains "light" -%}
+          {%- assign color_hex = "#ffb6c1" -%}
+        {%- elsif color_value_downcase contains "pink" or color_value_downcase contains "ורוד" -%}
+          {%- assign color_hex = "#ffc0cb" -%}
+        {%- elsif color_value_downcase contains "brown" and color_value_downcase contains "dark" -%}
+          {%- assign color_hex = "#654321" -%}  <!-- darkbrown -->
+        {%- elsif color_value_downcase contains "brown" and color_value_downcase contains "light" -%}
+          {%- assign color_hex = "#deb887" -%}  <!-- burlywood -->
+        {%- elsif color_value_downcase contains "brown" or color_value_downcase contains "חום" or color_value_downcase contains "מוקה" -%}
+          {%- assign color_hex = "#a52a2a" -%}
+        {%- elsif color_value_downcase contains "turquoise" or color_value_downcase contains "טורקיז" -%}
+          {%- assign color_hex = "#40e0d0" -%}
+        {%- endif -%}
+        <div class="color-circle" style="background-color: {{ color_hex }}; width: 15px; height: 15px; border-radius: 50%; display: inline-block; margin-right: 5px; margin-left:5px"></div>
         <span class="filter-item__label">
           {{ filter_value.label }}
         </span>
