@@ -2,13 +2,13 @@
 :root{--swiper-theme-color:#007aff}
 
 
-/* @font-face {
-  font-family: 'Heebo';
-  src: url('./heebo.woff2') format('woff2'),
-       url('./heebo.woff') format('woff');
+@font-face {
+  font-family: 'Arimo';
+  src: url('./arimo.tff') format('truetype'),
+       url('./arimo.woff') format('truetype');
  
 }
- */
+
 
 .swiper{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1}
 .swiper-vertical>.swiper-wrapper{flex-direction:column}
@@ -365,6 +365,7 @@ html:not(.no-js) body:not(.user-is-tabbing) :focus{
 }
 body{
   margin:0;
+  font-family: 'Arimo',sans-serif;
   font-weight:var(--font-body-weight);
   font-style:var(--font-body-style);
   font-size:var(--font-size-body-100);
@@ -374,6 +375,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 html{
+  font-family: 'Arimo',sans-serif;
   scroll-padding-top:20px;
 }
 html.header-sticky-enabled{
@@ -385,6 +387,7 @@ html.header-sticky-enabled{
   }
     }
 a{
+  font-family: 'Arimo',sans-serif;
   color:inherit;
   -webkit-text-decoration:none;
   text-decoration:none;
@@ -395,10 +398,12 @@ h3,
 h4,
 h5,
 h6{
+  font-family: 'Arimo',sans-serif;
   margin:0;
   font-weight:inherit;
 }
 p{
+  font-family: 'Arimo',sans-serif;
   margin:0;
 }
 p{
@@ -407,6 +412,7 @@ p{
 input:-webkit-autofill::first-line{
   font-size:var(--font-body-base-size);
   font-family:var(--font-body);
+    font-family: 'Arimo', sans-serif;
 }
 .theme-editor-scroll-offset{
   position:fixed;
@@ -634,6 +640,7 @@ select{
   position:relative;
   font-size:inherit;
   font-family:inherit;
+    font-family: 'Arimo', sans-serif;
   font-weight:var(--font-body-weight);
   background-color:transparent;
   color:inherit;
@@ -861,6 +868,7 @@ input.input + label{
   .shopify-policy__body p,
   .shopify-policy__body li{
     font-family:var(--font-body);
+      font-family: 'Arimo', sans-serif;
     font-weight:var(--font-body-weight);
     font-style:var(--font-body-style);
     line-height:var(--line-height-body);
@@ -987,6 +995,7 @@ input.input + label{
     margin-bottom:calc(4px * 4);
     margin-bottom:var(--spacing-4);
     font-family:var(--font-heading);
+      font-family: 'Arimo', sans-serif;
     line-height:var(--line-height-heading);
     font-weight:var(--font-heading-weight);
     letter-spacing:var(--font-heading-base-letter-spacing);
@@ -1814,6 +1823,7 @@ header[data-navigation-position="left"][data-logo-position="center"].is-sticky .
   text-transform:var(--logo-text-transform);
   letter-spacing:var(--logo-letter-spacing);
   font-family:var(--font-logo);
+    font-family: 'Arimo', sans-serif;
   font-weight:var(--font-logo-weight);
   font-style:var(--font-logo-style);
   white-space:nowrap;
@@ -4310,6 +4320,7 @@ html.no-js .product__media-show-more{
 @media (max-width: 719px){
 .quick-product .product__title{
       font-family:var(--font-body);
+        font-family: 'Arimo', sans-serif;
       font-weight:var(--font-body-weight);
       font-style:var(--font-body-style);
       line-height:var(--line-height-body);
@@ -10401,6 +10412,7 @@ button{
   cursor:pointer;
   -webkit-appearance:none;
   font-family:inherit;
+    font-family: 'Arimo', sans-serif;
   color:inherit;
   margin:0;
   padding:0;
@@ -11012,6 +11024,7 @@ html.sticky-header-enabled[data-enable-sticky-announcement-bar*="desktop"]
   background-color:transparent;
   color:var(--color-text);
   font-family:var(--font-body);
+    font-family: 'Arimo', sans-serif;
   font-style:var(--font-body-style);
 }
 .filter-bar__button.filter-bar__button--filters{
@@ -13127,6 +13140,7 @@ ul.drawer-menu__secondary-links .drawer-menu__item{
   justify-content:space-between;
   padding:0;
   font-family:inherit;
+    font-family: 'Arimo', sans-serif;
   font-size:inherit;
 
   background-color:transparent;
@@ -16796,6 +16810,7 @@ html.theme-editor .popup__tab{
   }
 .ff-body{
   font-family:var(--font-body);
+    font-family: 'Arimo', sans-serif;
   font-weight:var(--font-body-weight);
   font-style:var(--font-body-style);
   line-height:var(--line-height-body);
@@ -16803,6 +16818,7 @@ html.theme-editor .popup__tab{
 }
 .ff-heading{
   font-family:var(--font-heading);
+    font-family: 'Arimo', sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style);
   letter-spacing:var(--font-heading-base-letter-spacing);
@@ -16810,6 +16826,7 @@ html.theme-editor .popup__tab{
 }
 .ff-subheading{
   font-family:var(--font-heading);
+    font-family: 'Arimo', sans-serif;
   font-weight:var(--font-heading-weight);
   font-style:var(--font-heading-style);
   line-height:var(--line-height-subheading);
@@ -17127,6 +17144,7 @@ a.link:hover{
     color:var(--color-background-button);
     border:1px solid var(--color-background-button);
     font-family:var(--font-button);
+      font-family: 'Arimo', sans-serif;
     font-weight:var(--font-weight-button);
     font-size:var(--font-size-button);
     text-transform:none;
@@ -18834,14 +18852,16 @@ html:not(.no-js):not(.prefers-reduced-motion) .animation.animation--apps .animat
     var(--delay-amount) * var(--delay-offset-multiplier, 0)
   );
   }
-  /* @font-face {
-  font-family: 'Heebo';
-  src: url('./heebo.woff2') format('woff2');
+  @font-face {
+  font-family: 'Arimo';
+  src: url('./Arimo.tff') format('truetype');
   font-weight: 400;
   font-style: normal;
-} */
+}
 
-
+body, *, h1, h2, h3, h4, h5, h6, p, a, span, div, li, input, textarea, select {
+  font-family: 'Arimo', sans-serif;
+}
 .meganav__nav ul[depth="0"]>li{
   font-size: smaller;
 
