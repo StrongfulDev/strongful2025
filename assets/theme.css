@@ -18869,3 +18869,113 @@ body, *, h1, h2, h3, h4, h5, h6, p, a, span, div, li, input, textarea, select {
   width: 100%;
   direction:rtl
 }
+
+.meganav__nav {
+  text-align: right;
+  direction: rtl;
+}
+
+.meganav__nav a {
+  direction: rtl;
+}
+
+/* Ensure the list items are also aligned correctly */
+.header__links, .header__links-primary {
+  text-align: right;
+  direction: rtl;
+}
+
+.header__links a, .header__links-primary a {
+  direction: rtl;
+}
+
+/* Ensure the list items are also aligned correctly */
+.header__links > li, .header__links-primary > li {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__links > li > a, .header__links-primary > li > a {
+  display: inline-block;
+  padding: 0 10px; /* Adjust padding as needed */
+  margin: 0 5px; /* Add margin to ensure proper spacing */
+}
+
+.header__links > li > a svg, .header__links-primary > li > a svg {
+  margin-left: 5px; /* Add margin to the left of the SVG */
+}
+
+/* Ensure the list items are also aligned correctly */
+.meganav__list-parent, .meganav__list-parent ul {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Add margin to all items except the last one */
+.header__links-primary .header__links-list > li:not(:last-child) {
+  margin-right: 24px;
+  margin-right: var(--spacing-6);
+}
+
+/* Remove left margin for the last child */
+.header__links-primary .header__links-list > li:last-child {
+  margin-left: 0;
+  margin-right: var(--spacing-6);
+}
+
+/* Optional: Align the column dividers to the left if needed */
+.meganav__column-rule {
+  float: left;
+}
+
+.product-item__meta {
+  text-align: right;
+  direction: rtl;
+}
+
+.product-item__meta .product-title {
+  display: inline-block;
+  margin-right: 0px; /* Adjust margin as needed */
+}
+
+.product-item__meta .product-rating {
+  display: inline-block;
+  float: left;
+  direction: ltr;
+  margin-left: 0px; /* Adjust margin as needed */
+}
+
+.product-item__meta .product-rating .star {
+  display: inline-block;
+  color: gold; /* Adjust color as needed */
+  font-size: 16px; /* Adjust size as needed */
+  width: 16px; /* Adjust width as needed */
+  height: 16px; /* Adjust height as needed */
+}
+
+.product-item__meta .product-rating .rating-score {
+  display: inline-block;
+  margin-left: 5px; /* Adjust margin as needed */
+  font-size: 14px; /* Adjust size as needed */
+}
+
+.icon.icon-new.icon-star-filled {
+  width: 10px;
+}
+
+.product-item__meta .product-rating .rating-value {
+  font-size: 10px;
+}
+.rating-count {
+  font-size: 10px;
+}
+
+product-item__text ta-r {
+  font-size:10px
+}
+.ff-body.fs-body-60.product-item__product-vendor{
+  font-size:10px
+}
+.product-item__price{
+  font-size:12px
+}

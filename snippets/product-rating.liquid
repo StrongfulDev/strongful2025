@@ -15,10 +15,12 @@
 {%- if rating_count > 0 -%}
   <div class="product-rating {{ variant }}">
     <div class="product-rating__stars">
-      {%- render 'star-rating', rating: rating -%}
+      {% comment %} {%- render 'star-rating', rating: rating -%} {% endcomment %}
     </div>
-    <div class="product-rating__count t-opacity-60 fs-body-50">
-      <span>{{ rating }}</span> <span>({{ rating_count }})</span>
+    <div class="product-rating__count t-opacity-60 fs-body-50" style="display: flex; align-items: center; direction:ltr;">
+      <span class="rating-value">{{ rating }}</span>
+       {% comment %} <span class="rating-count">({{ rating_count }})</span>  {% endcomment %}
+       <span class="rating-icon" style="margin-left:0px;">{%- render 'icon' with icon: 'star-filled' -%}</span>
     </div>
   </div>
 {%- endif -%}

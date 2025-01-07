@@ -11,21 +11,28 @@
   assign remaining_stars = max_star_rating | minus: rating
 -%}
 
-{%- for star in (1..solid_star_rating) -%}
-  {%- render 'icon' with icon: 'star-filled' -%}
-{%- endfor -%}
+{%- if template == 'collection' -%}
+  <span class="star">
+    {%- render 'icon' with icon: 'star-filled' -%}
+  </span>
+  <span class="rating-score">{{ rating | round: 1 }}</span>
+{%- else -%}
+  {%- for star in (1..solid_star_rating) -%}
+    {%- render 'icon' with icon: 'star-filled' -%}
+  {%- endfor -%}
 
-{%- if remaining_stars > 0 -%}
-  {%- assign remaining_stars_includes_half_star = remaining_stars | modulo: 1 -%}
-  {%- if remaining_stars_includes_half_star != 0 -%}
-    {%- render 'icon' with icon: 'star-half' -%}
-  {%- endif -%}
+  {%- if remaining_stars > 0 -%}
+    {%- assign remaining_stars_includes_half_star = remaining_stars | modulo: 1 -%}
+    {%- if remaining_stars_includes_half_star != 0 -%}
+      {%- render 'icon' with icon: 'star-half' -%}
+    {%- endif -%}
 
-  {%- assign remaining_empty_stars = remaining_stars | floor -%}
+    {%- assign remaining_empty_stars = remaining_stars | floor -%}
 
-  {%- if remaining_empty_stars > 0 -%}
-    {%- for empty_star in (1..remaining_empty_stars) -%}
-      {%- render 'icon' with icon: 'star-empty' -%}
-    {%- endfor -%}
+    {%- if remaining_empty_stars > 0 -%}
+      {%- for empty_star in (1..remaining_empty_stars) -%}
+        {%- render 'icon' with icon: 'star-empty' -%}
+      {%- endfor -%}
+    {%- endif -%}
   {%- endif -%}
 {%- endif -%}

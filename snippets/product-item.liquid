@@ -235,23 +235,41 @@
     </div>
 
     <div class="product-item__meta">
-      <div class="product-item__text ta-c ">
-        <h4 class="ff-body product-item__product-title fs-product-card-title">
+      <div class="product-title" style="font-size: 12px;">
+        {{ product.title }}
+      </div>
+
+      <!-- Other meta information aligned to the right -->
+      <div class="product-price">
+        {{ product.price | money }}
+      </div>
+      <div class="product-description">
+        {{ product.description }}
+      </div>
+      <!-- Add other meta information as needed -->
+    </div>
+
+    <div class="product-item__meta">
+      <div class="product-item__text ta-r ">
+        <div class="ff-body product-item__product-title fs-product-card-title">
           {%- if placeholder -%}
             {{ 'homepage.onboarding.product_title' | t }}
           {%- else -%}
-            <a href="{{ prod.url | within: collection }}">{{ prod.title }}</a>
+            <a href="{{ prod.url | within: collection }}" style="font-size:12px">{{ prod.title }} </a>
           {%- endif -%}
-        </h4>
 
-        {% if settings.product_listing_show_vendor and prod.vendor %}
-          <h5 class="ff-body fs-body-60 product-item__product-vendor">
-            {{ prod.vendor }}
-          </h5>
-        {% endif %}
-
-        {% if settings.product_listing_show_rating %}
+            {% if settings.product_listing_show_rating %}
           {% render 'product-rating', prod: prod %}
+        {% endif %}
+         
+        </div>
+        
+  
+         
+        {% if settings.product_listing_show_vendor and prod.vendor %}
+          <div class="ff-body fs-body-60 product-item__product-vendor">
+            {{ prod.vendor }}
+          </div>
         {% endif %}
 
         {% liquid
