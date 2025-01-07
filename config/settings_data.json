@@ -24,7 +24,7 @@
     "capitalize_logo": false,
     "logo_base_size": 42,
     "font_heading": "arimo_n4",
-    "capitalize_headings": true,
+    "capitalize_headings": false,
     "heading_letter_spacing": -10,
     "heading_base_size": 42,
     "heading_mobile_base_scale": 85,
